@@ -11,6 +11,19 @@
 - ⚙️ **Network Scanner** in Python
 - 📊 **Linux Log Monitoring Script**
 - 🌐 Web Recon Toolkit *(coming soon)*
+- ## 🔍 Nmap Scans
+Hands-on network scanning using Nmap for service enumeration, OS detection, and vulnerability assessment.
+- 📄 [Localhost Scan](nmap-scans/local_scan.txt)
+- 🧠 [Version Detection](nmap-scans/version_scan.txt)
+- 🖥️ [OS Detection Scan](nmap-scans/os_detection_scan.txt)
+- 🔐 [Vulnerability Script Scan](nmap-scans/vuln_scan.txt)
+- ✨ [Custom IP Scan (172.20.10.X)](nmap-scans/custom_ports_scan.txt)
+---
+## 🧪 Wireshark Captures
+Real-world packet analysis using Wireshark. Includes HTTP traffic, DNS queries, and custom lab captures.
+- 🌐 [HTTP Traffic Capture](wireshark-captures/http_capture.pcap)
+- 🌎 [DNS Query Capture](wireshark-captures/dns_query.pcap)
+- 🧬 [Custom Lab Capture](wireshark-captures/custom_lab.pcap)
 ### 🌍 Platforms I'm Active On:
 - 🧠 TryHackMe: apextico
 - 🧱 Hack The Box: apextico
