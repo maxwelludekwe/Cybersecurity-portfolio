@@ -24,6 +24,8 @@ Real-world packet analysis using Wireshark. Includes HTTP traffic, DNS queries, 
 - 🌐 [HTTP Traffic Capture](wireshark-captures/http_capture.pcap)
 - 🌎 [DNS Query Capture](wireshark-captures/dns_query.pcap)
 - 🧬 [Custom Lab Capture](wireshark-captures/custom_lab.pcap)
+- ## Wireshark Lab Tracker
+Follow my packet analysis journey [here](Wireshark-Lab-Tracker.md).
 ### 🌍 Platforms I'm Active On:
 - 🧠 TryHackMe: apextico
 - 🧱 Hack The Box: apextico
