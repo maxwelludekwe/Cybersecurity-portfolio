@@ -86,3 +86,10 @@ a {
     object-fit: cover;
     margin-bottom: 15px;
 }
+.social-links {
+    margin-top: 10px;
+}
+.social-icon {
+    width: 30px;
+    height: 30px;
+}
