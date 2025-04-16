@@ -1,47 +1,170 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Maxwell Udekwe | Cybersecurity Portfolio</title>
-    <link rel="stylesheet" href="assets/style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maxwell's Cybersecurity Portfolio</title>
+    <meta name="description" content="Maxwell Udekwe's personal website showcasing cybersecurity projects, skills, and tools.">
+    <meta name="keywords" content="Cybersecurity, Maxwell Udekwe, Ethical Hacking, Network Security, Kali Linux, Nmap, GitHub Portfolio">
+    <meta name="author" content="Maxwell Udekwe">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #0078d7;
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin-top: 1rem;
+        }
+        nav {
+            text-align: center;
+            margin: 1rem 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #0078d7;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 2rem;
+            text-align: center;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+        .skills, .tools {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .skill, .tool {
+            background-color: #0078d7;
+            color: white;
+            padding: 1rem;
+            border-radius: 5px;
+            width: 150px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        #back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #0078d7;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        #back-to-top:hover {
+            background-color: #005bb5;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <div class="container">
-            <img src="assets/profile.jpg" alt="Profile Picture" class="profile-pic">
-            <h1>Maxwell Udekwe</h1>
-            <p>Cybersecurity Enthusiast | Bug Hunter | Cloud Security Explorer</p>
-<div class="social-links">
-    <a href="https://www.linkedin.com/in/maxwell-udekwe-7b6296343" target="_blank">
-        <img src="assets/linkedin.png" alt="LinkedIn" class="social-icon">
-    </a>
-</div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="mailto:maxwelludekwe@gmail.com">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+        <h1>Welcome to Maxwell's Cybersecurity Portfolio</h1>
+        <img src="https://github.com/Apextico.png" alt="Maxwell's GitHub Profile Photo" aria-label="GitHub Profile Picture">
     </header>
+    <nav aria-label="Main navigation">
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#tools">Tools</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-    <main class="container">
-        <section class="hero">
-            <h2>Welcome to My Portfolio</h2>
-            <p>I’m learning cybersecurity hands-on through bug hunting, Nmap, Wireshark, and AWS cloud security. Follow my journey as I grow and build a career in infosec.</p>
-        </section>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            Hello! I'm <strong>Maxwell Udekwe</strong>, a passionate cybersecurity enthusiast focused on ethical hacking, network analysis, and secure systems design.
+            I thrive in hands-on environments where I can identify threats, analyze vulnerabilities, and build solutions that make the digital world safer.
+            My journey into cybersecurity is fueled by curiosity, discipline, and the goal of becoming a top-tier defender in the cyber world.
+            I'm currently expanding my knowledge with platforms like TryHackMe and Hack The Box, while actively contributing to my GitHub portfolio.
+        </p>
+    </section>
 
-        <section class="about">
-            <h2>About Me</h2>
-            <p>I’m an aspiring cybersecurity professional focused on network analysis, ethical hacking, and cloud security. I’m currently learning through platforms like TryHackMe, Hack The Box, and building real-world projects to sharpen my skills.</p>
-        </section>
-    </main>
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>Here are some of my recent projects:</p>
+        <ul>
+            <li><strong>Cybersecurity Analysis Tool:</strong> A Python-based scanner for detecting vulnerabilities in web applications.</li>
+            <li><strong>Secure Web Application:</strong> Developed a login system with multi-factor authentication using Flask and JWT.</li>
+            <li><strong>Network Monitoring System:</strong> Created a dashboard to visualize real-time packet data using Wireshark and Python.</li>
+        </ul>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="skill">Cybersecurity</div>
+            <div class="skill">Web Development</div>
+            <div class="skill">Network Security</div>
+            <div class="skill">Python</div>
+            <div class="skill">Penetration Testing</div>
+        </div>
+    </section>
+
+    <section id="tools">
+        <h2>Tools & Environment</h2>
+        <p>Here are the tools I frequently use and my home environment:</p>
+        <div class="tools">
+            <div class="tool">Nmap</div>
+            <div class="tool">Burp Suite</div>
+            <div class="tool">Wireshark</div>
+            <div class="tool">Kali Linux</div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:maxwelludekwe@gmail.com">maxwelludekwe@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/Apextico" target="_blank">github.com/Apextico</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/maxwell-udekwe-7b6296343/" target="_blank">linkedin.com/in/maxwell-udekwe</a></p>
+    </section>
 
     <footer>
-        <p>Reach me at <a href="mailto:maxwelludekwe@gmail.com">maxwelludekwe@gmail.com</a></p>
+        <p>&copy; 2025 Maxwell. All rights reserved.</p>
     </footer>
+
+    <button id="back-to-top" onclick="scrollToTop()">Back to Top</button>
+
+    <script>
+        // Show/hide Back to Top button
+        window.onscroll = function() {
+            const button = document.getElementById('back-to-top');
+            button.style.display = (document.documentElement.scrollTop > 200) ? 'block' : 'none';
+        };
+
+        // Smooth scroll to top
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
 </body>
 </html>
