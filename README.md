@@ -74,7 +74,7 @@ Real-world packet analysis using Wireshark. Includes HTTP traffic, DNS queries, 
 - 🧠 TryHackMe: *apextico*
 - 🧱 Hack The Box: *apextico*
 - 🔗 LinkedIn: [www.linkedin.com/in/maxwell-udekwe-7b6296343](https://www.linkedin.com/in/maxwell-udekwe-7b6296343)
-- 📂 GitHub: [Apextico](https://github.com/maxwelludekwe)
+- 📂 GitHub: [Maxwelludekwe](https://github.com/maxwelludekwe)
 
 ---
 
