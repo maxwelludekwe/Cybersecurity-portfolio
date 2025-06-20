@@ -1,170 +1,94 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maxwell's Cybersecurity Portfolio</title>
-    <meta name="description" content="Maxwell Udekwe's personal website showcasing cybersecurity projects, skills, and tools.">
-    <meta name="keywords" content="Cybersecurity, Maxwell Udekwe, Ethical Hacking, Network Security, Kali Linux, Nmap, GitHub Portfolio">
-    <meta name="author" content="Maxwell Udekwe">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-        header {
-            background-color: #0078d7;
-            color: white;
-            padding: 1.5rem;
-            text-align: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        header img {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            margin-top: 1rem;
-        }
-        nav {
-            text-align: center;
-            margin: 1rem 0;
-        }
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #0078d7;
-            font-weight: bold;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        section {
-            padding: 2rem;
-            text-align: center;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-            margin-top: 2rem;
-        }
-        .skills, .tools {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-        .skill, .tool {
-            background-color: #0078d7;
-            color: white;
-            padding: 1rem;
-            border-radius: 5px;
-            width: 150px;
-            text-align: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        #back-to-top {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #0078d7;
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            border-radius: 5px;
-            cursor: pointer;
-            display: none;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        #back-to-top:hover {
-            background-color: #005bb5;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maxwell Udekwe | Cybersecurity Portfolio</title>
+ <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
-<body>
-    <header>
-        <h1>Welcome to Maxwell's Cybersecurity Portfolio</h1>
-        <img src="https://github.com/Apextico.png" alt="Maxwell's GitHub Profile Photo" aria-label="GitHub Profile Picture">
-    </header>
-    <nav aria-label="Main navigation">
-        <a href="#about">About Me</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#tools">Tools</a>
-        <a href="#contact">Contact</a>
-    </nav>
+<body class="bg-gray-900 text-white font-sans">
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            Hello! I'm <strong>Maxwell Udekwe</strong>, a passionate cybersecurity enthusiast focused on ethical hacking, network analysis, and secure systems design.
-            I thrive in hands-on environments where I can identify threats, analyze vulnerabilities, and build solutions that make the digital world safer.
-            My journey into cybersecurity is fueled by curiosity, discipline, and the goal of becoming a top-tier defender in the cyber world.
-            I'm currently expanding my knowledge with platforms like TryHackMe and Hack The Box, while actively contributing to my GitHub portfolio.
-        </p>
-    </section>
+  <!-- HERO -->
+  <header class="bg-cover bg-center h-64 flex items-center justify-center text-center" style="background-image: url('./assets/hero-banner.jpg');">
+    <div class="bg-black bg-opacity-0 p-4">
+      <h1 class="text-4xl font-bold">Maxwell Udekwe</h1>
+      <p class="text-lg font-bold mt-2">Cybersecurity Enthusiast | Penetration Tester | Network Defender | Soc Analyst</p>
+    </div>
+  </header>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <p>Here are some of my recent projects:</p>
-        <ul>
-            <li><strong>Cybersecurity Analysis Tool:</strong> A Python-based scanner for detecting vulnerabilities in web applications.</li>
-            <li><strong>Secure Web Application:</strong> Developed a login system with multi-factor authentication using Flask and JWT.</li>
-            <li><strong>Network Monitoring System:</strong> Created a dashboard to visualize real-time packet data using Wireshark and Python.</li>
-        </ul>
-    </section>
+  <!-- ABOUT -->
+  <section class="p-6">
+    <h2 class="text-2xl font-semibold mb-4"><i data-lucide="user" class="inline w-5 h-5 mr-2"></i>About Me</h2>
+    <div class="flex items-center gap-6">
+      <img src="./assets/profile.jpg" alt="Profile Picture" class="w-32 h-32 rounded-full border-4 border-gray-700">
+      <p>Hello! I’m Maxwell, a passionate cybersecurity professional with experience in IT support, consulting, and management. I specialize in penetration testing soc analyst, malware analysis, and securing networks using tools like Kali Linux, Metasploit, wireshark, nmap, and Burp Suite.</p>
+    </div>
+  </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills">
-            <div class="skill">Cybersecurity</div>
-            <div class="skill">Web Development</div>
-            <div class="skill">Network Security</div>
-            <div class="skill">Python</div>
-            <div class="skill">Penetration Testing</div>
-        </div>
-    </section>
+  <!-- PROJECTS -->
+  <section class="p-6 bg-gray-800">
+    <h2 class="text-2xl font-semibold mb-4"><i data-lucide="folder" class="inline w-5 h-5 mr-2"></i>Projects</h2>
 
-    <section id="tools">
-        <h2>Tools & Environment</h2>
-        <p>Here are the tools I frequently use and my home environment:</p>
-        <div class="tools">
-            <div class="tool">Nmap</div>
-            <div class="tool">Burp Suite</div>
-            <div class="tool">Wireshark</div>
-            <div class="tool">Kali Linux</div>
-        </div>
-    </section>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div class="bg-gray-700 p-4 rounded">
+        <img src="./assets/wireshark.png" alt="Wireshark Lab" class="w-full h-40 object-cover mb-2 rounded">
+        <h3 class="text-xl font-bold mb-1">Network Traffic Analysis</h3>
+        <p>Used Wireshark to capture, analyze, and secure packets during live network simulation in my home lab.</p>
+      </div>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:maxwelludekwe@gmail.com">maxwelludekwe@gmail.com</a></p>
-        <p>GitHub: <a href="https://github.com/Apextico" target="_blank">github.com/Apextico</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/maxwell-udekwe-7b6296343/" target="_blank">linkedin.com/in/maxwell-udekwe</a></p>
-    </section>
+      <div class="bg-gray-700 p-4 rounded">
+        <img src="./assets/nmap.png" alt="nmap Project" class="w-full h-40 object-cover mb-2 rounded">
+        <h3 class="text-xl font-bold mb-1">Penetration Testing</h3>
+        <p>Capture and view traffics using windows, Kali Linux and nmap to monitor traffics in virtual machines and windows.</p>
+      </div>
 
-    <footer>
-        <p>&copy; 2025 Maxwell. All rights reserved.</p>
-    </footer>
+      <div class="bg-gray-700 p-4 rounded">
+        <img src="./assets/burpsuite.png" alt="nmap Project" class="w-full h-40 object-cover mb-2 rounded">
+        <h3 class="text-xl font-bold mb-1">Penetration Testing</h3>
+        <p>Intercepting proxy to analyze, manipulate, and exploit web application vulnerabilities. using windows, Kali Linux and burpsuite to monitor traffics in virtual machines and windows.</p>
+      </div>
 
-    <button id="back-to-top" onclick="scrollToTop()">Back to Top</button>
+      <div class="bg-gray-700 p-4 rounded">
+        <img src="./assets/metasploit.png" alt="Metasploit Project" class="w-full h-40 object-cover mb-2 rounded">
+        <h3 class="text-xl font-bold mb-1">Penetration Testing</h3>
+        <p>Performed penetration tests using windows, Kali Linux and Metasploit to identify and patch vulnerabilities in virtual machines and windows.</p>
+      </div>
+    </div>
+  </section>
 
-    <script>
-        // Show/hide Back to Top button
-        window.onscroll = function() {
-            const button = document.getElementById('back-to-top');
-            button.style.display = (document.documentElement.scrollTop > 200) ? 'block' : 'none';
-        };
+  <!-- TOOLS -->
+  <section class="p-6">
+    <h2 class="text-2xl font-semibold mb-4"><i data-lucide="wrench" class="inline w-5 h-5 mr-2"></i>Tools & Skills</h2>
+    <ul class="grid grid-cols-2 md:grid-cols-3 gap-4 list-disc pl-6">
+      <li>Kali Linux</li>
+      <li>Burp Suite</li>
+      <li>Wireshark</li>
+      <li>Metasploit</li>
+      <li>VirtualBox</li>
+      <li>Nmap</li>
+    </ul>
+  </section>
 
-        // Smooth scroll to top
-        function scrollToTop() {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-    </script>
+  <!-- CONTACT -->
+  <section class="p-6 bg-gray-800">
+    <h2 class="text-2xl font-semibold mb-4"><i data-lucide="mail" class="inline w-5 h-5 mr-2"></i>Contact</h2>
+    <p>Email: <a href="mailto:maxwelludekwe@gmail.com" class="text-blue-400">maxwelludekwe@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/maxwell-udekwe-7b6296343" target="_blank" class="text-blue-400">linkedin.com/in/maxwell-udekwe</a></p>
+    <p>GitHub: <a href="https://github.com/maxwelludekwe/Cybersecurity-portfolio" target="_blank" class="text-blue-400">github.com/maxwelludekwe/Cybersecurity-portfolio</a></p>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section class="p-6">
+    <h2 class="text-2xl font-semibold mb-4"><i data-lucide="award" class="inline w-5 h-5 mr-2"></i>Certifications</h2>
+    <div class="flex gap-6 items-center">
+      <img src="./assets/certs/comptia-securityplus.png" alt="CompTIA Security+ Badge" class="w-20 h-auto">
+      <img src="./assets/certs/alison.png" alt="Alison Certificate Badge" class="w-20 h-auto">
+    </div>
+  </section>
+
+  <script>
+    lucide.createIcons();
+  </script>
 </body>
 </html>
