@@ -41,7 +41,7 @@
 |-----------------------|---------------------------------------------------|------|
 | Wireshark Packet Lab  | Captured, filtered, and analyzed live traffic     | [View](./Wireshark-Lab-Tracker.md) |
 | Nmap Scan Report      | Ran reconnaissance and vulnerability scans        | [View](./Nmap-Lab-Tracker.md) |
-| Personal Portfolio    | Live, responsive cybersecurity portfolio website  | [Visit Site](https://apextico.github.io/) |
+| Personal Portfolio    | Live, responsive cybersecurity portfolio website  | [Visit Site](https://maxwelludekwe.github.io/) |
 
 ---
 
