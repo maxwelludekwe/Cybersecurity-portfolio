@@ -1,87 +1,81 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Maxwell Udekwe | Cybersecurity Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    ::-webkit-scrollbar { width: 8px; }
-    ::-webkit-scrollbar-track { background: #1a1a1a; }
-    ::-webkit-scrollbar-thumb { background: #22c55e; border-radius: 4px; }
-    ::-webkit-scrollbar-thumb:hover { background: #16a34a; }
-    html { scroll-behavior: smooth; }
-    .glow-green { box-shadow: 0 0 20px rgba(34, 197, 94, 0.3); }
-    .glow-blue { box-shadow: 0 0 20px rgba(59, 130, 246, 0.3); }
-  </style>
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
-<body class="bg-white text-gray-900 dark:bg-gray-950 dark:text-white font-sans">
+<body class="bg-gray-900 text-white font-sans">
 
-  <!-- Hero Banner -->
-  <section class="py-20 text-center bg-gradient-to-b from-gray-800 to-gray-900 text-white">
-    <img src="https://avatars.githubusercontent.com/u/124202244?v=4" alt="Profile" class="w-32 h-32 mx-auto rounded-full mb-4 glow-green">
-    <h1 class="text-4xl font-bold">Maxwell Udekwe</h1>
-    <p class="mt-2 text-lg">Cybersecurity Enthusiast | Ethical Hacker | Network Defender</p>
-    <p class="mt-1 text-sm text-green-400">Protecting systems. Empowering security.</p>
+  <!-- HERO -->
+  <header class="bg-cover bg-center h-64 flex items-center justify-center text-center" style="background-image: url('./assets/hero-banner.jpg');">
+    <div class="bg-black bg-opacity-60 p-4">
+      <h1 class="text-4xl font-bold">Maxwell Udekwe</h1>
+      <p class="text-lg mt-2">Cybersecurity Enthusiast | Penetration Tester | Network Defender</p>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section class="p-6">
+    <h2 class="text-2xl font-semibold mb-4"><i data-lucide="user" class="inline w-5 h-5 mr-2"></i>About Me</h2>
+    <div class="flex items-center gap-6">
+      <img src="./assets/profile.jpg" alt="Profile Picture" class="w-32 h-32 rounded-full border-4 border-gray-700">
+      <p>Hello! I’m Maxwell, a passionate cybersecurity professional with experience in IT support, consulting, and management. I specialize in penetration testing, malware analysis, and securing networks using tools like Kali Linux, Metasploit, and Burp Suite.</p>
+    </div>
   </section>
 
-  <!-- Tools Section -->
-  <section id="tools" class="bg-gray-100 dark:bg-gray-900 py-12 px-6">
-    <div class="max-w-6xl mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-10">Tools I Use</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+  <!-- PROJECTS -->
+  <section class="p-6 bg-gray-800">
+    <h2 class="text-2xl font-semibold mb-4"><i data-lucide="folder" class="inline w-5 h-5 mr-2"></i>Projects</h2>
 
-        <!-- Nmap -->
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition-all duration-300">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Nmap-logo.svg" alt="Nmap" class="w-16 h-16 mx-auto mb-4">
-          <h3 class="text-xl font-semibold">Nmap</h3>
-          <p class="text-sm mt-2">Powerful network scanner for host discovery and vulnerability mapping.</p>
-        </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div class="bg-gray-700 p-4 rounded">
+        <img src="./assets/wireshark.png" alt="Wireshark Lab" class="w-full h-40 object-cover mb-2 rounded">
+        <h3 class="text-xl font-bold mb-1">Network Traffic Analysis</h3>
+        <p>Used Wireshark to capture, analyze, and secure packets during live network simulation in my home lab.</p>
+      </div>
 
-        <!-- Burp Suite -->
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition-all duration-300">
-          <img src="https://portswigger.net/cms/images/63/36/0bb3-article-210928-burp-suite-logo-icon.png" alt="Burp Suite" class="w-16 h-16 mx-auto mb-4">
-          <h3 class="text-xl font-semibold">Burp Suite</h3>
-          <p class="text-sm mt-2">Web app penetration testing suite for scanning and intercepting traffic.</p>
-        </div>
-
-        <!-- Wireshark -->
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition-all duration-300">
-          <img src="https://upload.wikimedia.org/wikipedia/en/e/e6/Wireshark_icon.png" alt="Wireshark" class="w-16 h-16 mx-auto mb-4">
-          <h3 class="text-xl font-semibold">Wireshark</h3>
-          <p class="text-sm mt-2">Packet analysis tool for deep network inspection and traffic troubleshooting.</p>
-        </div>
-
-        <!-- Metasploit -->
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition-all duration-300">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Metasploit_logo_and_wordmark.png" alt="Metasploit" class="w-16 h-16 mx-auto mb-4">
-          <h3 class="text-xl font-semibold">Metasploit</h3>
-          <p class="text-sm mt-2">Exploit development and testing framework for ethical hacking.</p>
-        </div>
-
+      <div class="bg-gray-700 p-4 rounded">
+        <img src="./assets/metasploit.png" alt="Metasploit Project" class="w-full h-40 object-cover mb-2 rounded">
+        <h3 class="text-xl font-bold mb-1">Penetration Testing</h3>
+        <p>Performed penetration tests using Kali Linux and Metasploit to identify and patch vulnerabilities in virtual machines.</p>
       </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="bg-gray-800 text-white py-12 px-6">
-    <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-6">Get in Touch</h2>
-      <p class="mb-4">Let's connect and secure the web together.</p>
-      <div class="flex flex-col md:flex-row items-center justify-center gap-6 text-lg">
+  <!-- TOOLS -->
+  <section class="p-6">
+    <h2 class="text-2xl font-semibold mb-4"><i data-lucide="wrench" class="inline w-5 h-5 mr-2"></i>Tools & Skills</h2>
+    <ul class="grid grid-cols-2 md:grid-cols-3 gap-4 list-disc pl-6">
+      <li>Kali Linux</li>
+      <li>Burp Suite</li>
+      <li>Wireshark</li>
+      <li>Metasploit</li>
+      <li>VirtualBox</li>
+      <li>Nmap</li>
+    </ul>
+  </section>
 
-        <a href="mailto:maxwelludekwe@gmail.com" class="hover:underline text-green-400">📧 maxwelludekwe@gmail.com</a>
-        <a href="https://www.linkedin.com/in/maxwell-udekwe-7b6296343" target="_blank" class="hover:underline text-blue-400">💼 LinkedIn</a>
-        <a href="https://github.com/maxwelludekwe" target="_blank" class="hover:underline text-gray-300">💻 GitHub</a>
+  <!-- CONTACT -->
+  <section class="p-6 bg-gray-800">
+    <h2 class="text-2xl font-semibold mb-4"><i data-lucide="mail" class="inline w-5 h-5 mr-2"></i>Contact</h2>
+    <p>Email: <a href="mailto:maxwelludekwe@gmail.com" class="text-blue-400">maxwelludekwe@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/maxwell-udekwe-7b6296343" target="_blank" class="text-blue-400">linkedin.com/in/maxwell-udekwe</a></p>
+  </section>
 
-      </div>
+  <!-- CERTIFICATIONS -->
+  <section class="p-6">
+    <h2 class="text-2xl font-semibold mb-4"><i data-lucide="award" class="inline w-5 h-5 mr-2"></i>Certifications</h2>
+    <div class="flex gap-6 items-center">
+      <img src="./assets/certs/comptia-securityplus.png" alt="CompTIA Security+ Badge" class="w-20 h-auto">
+      <img src="./assets/certs/alison.png" alt="Alison Certificate Badge" class="w-20 h-auto">
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-black text-gray-400 text-sm text-center py-4">
-    © 2025 Maxwell Udekwe. All rights reserved.
-  </footer>
-
+  <script>
+    lucide.createIcons();
+  </script>
 </body>
 </html>
