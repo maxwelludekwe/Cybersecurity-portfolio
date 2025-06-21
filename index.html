@@ -7,9 +7,10 @@
  <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
 </head>
-<body class="<div class="text-center text-2xl text-green-500 font-bold mt-10">
-  Tailwind CSS is working!
-</div>bg-gray-900 text-black font-sans">
+<body>
+<div class="text-3xl font-bold text-green-500 text-center mt-10">
+  Tailwind is working!
+</div>
 
   <!-- HERO -->
   <header class="bg-cover bg-center h-64 flex items-center justify-center text-center" style="background-image: url('./assets/hero-banner.jpg');">
@@ -61,18 +62,62 @@
   </section>
 
   <!-- TOOLS -->
-  <section class="p-6">
-    <h2 class="text-2xl font-semibold mb-4"><i data-lucide="wrench" class="inline w-5 h-5 mr-2"></i>Tools & Skills</h2>
-    <ul class="grid grid-cols-2 md:grid-cols-3 gap-4 list-disc pl-6">
-      <li>Kali Linux</li>
-      <li>Burp Suite</li>
-      <li>Wireshark</li>
-      <li>Metasploit</li>
-      <li>VirtualBox</li>
-      <li>Nmap</li>
-    </ul>
-  </section>
+  <section class="bg-gray-900 text-white py-12 px-6" id="tools">
+  <h2 class="text-3xl font-bold text-center mb-10 underline decoration-green-500">Cybersecurity Tools</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-6xl mx-auto">
 
+    <!-- Nmap -->
+    <div class="p-6 border border-green-500 rounded-lg shadow-md hover:shadow-green-500/50 transition duration-300">
+      <div class="flex items-center mb-2">
+        <!-- Globe Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-400 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 12c0-1.657-1.343-3-3-3s-3 1.343-3 3 1.343 3 3 3 3-1.343 3-3z" />
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.522 5 12 5s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7s-8.268-2.943-9.542-7z" />
+        </svg>
+        <h3 class="text-xl font-semibold text-green-400">Nmap</h3>
+      </div>
+      <p>Scanning networks and discovering open ports and services efficiently.</p>
+    </div>
+
+    <!-- Burp Suite -->
+    <div class="p-6 border border-blue-500 rounded-lg shadow-md hover:shadow-blue-500/50 transition duration-300">
+      <div class="flex items-center mb-2">
+        <!-- Shield Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-400 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+        </svg>
+        <h3 class="text-xl font-semibold text-blue-400">Burp Suite</h3>
+      </div>
+      <p>Intercepting and analyzing web traffic to uncover vulnerabilities.</p>
+    </div>
+
+    <!-- Metasploit -->
+    <div class="p-6 border border-purple-500 rounded-lg shadow-md hover:shadow-purple-500/50 transition duration-300">
+      <div class="flex items-center mb-2">
+        <!-- Terminal Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-purple-400 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5-6h3m-6 0H4m0 6h6" />
+        </svg>
+        <h3 class="text-xl font-semibold text-purple-400">Metasploit</h3>
+      </div>
+      <p>Simulating real-world attacks with advanced exploit modules and payloads.</p>
+    </div>
+
+    <!-- Wireshark -->
+    <div class="p-6 border border-yellow-500 rounded-lg shadow-md hover:shadow-yellow-500/50 transition duration-300">
+      <div class="flex items-center mb-2">
+        <!-- Eye Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-yellow-300 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.522 5 12 5s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7s-8.268-2.943-9.542-7z" />
+        </svg>
+        <h3 class="text-xl font-semibold text-yellow-300">Wireshark</h3>
+      </div>
+      <p>Analyzing packet-level data to monitor and troubleshoot network traffic.</p>
+    </div>
+
+  </div>
+</section>
   <!-- CONTACT -->
   <section class="p-6 bg-gray-800">
     <h2 class="text-2xl font-semibold mb-4"><i data-lucide="mail" class="inline w-5 h-5 mr-2"></i>Contact</h2>
