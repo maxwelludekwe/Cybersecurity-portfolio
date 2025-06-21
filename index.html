@@ -1,87 +1,81 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Maxwell Udekwe | Cybersecurity Portfolio</title>
+  <title>Maxwell Udekwe – Cybersecurity Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <style>
-    ::-webkit-scrollbar { width: 8px; }
-    ::-webkit-scrollbar-track { background: #1a1a1a; }
-    ::-webkit-scrollbar-thumb { background: #22c55e; border-radius: 4px; }
-    ::-webkit-scrollbar-thumb:hover { background: #16a34a; }
-    html { scroll-behavior: smooth; }
-    .glow-green { box-shadow: 0 0 20px rgba(34, 197, 94, 0.3); }
-    .glow-blue { box-shadow: 0 0 20px rgba(59, 130, 246, 0.3); }
+    html {
+      scroll-behavior: smooth;
+    }
+    .glow-green {
+      box-shadow: 0 0 20px rgba(34, 197, 94, 0.3);
+    }
+    .glow-blue {
+      box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+    }
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #1a1a1a;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #22c55e;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #16a34a;
+    }
   </style>
 </head>
-<body class="bg-white text-gray-900 dark:bg-gray-950 dark:text-white font-sans">
+<body class="bg-white text-black dark:bg-gray-900 dark:text-white transition duration-300">
+  <!-- Dark Mode Toggle -->
+  <div class="flex justify-end p-4">
+    <button onclick="document.documentElement.classList.toggle('dark')" class="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded">
+      Toggle Dark Mode
+    </button>
+  </div>
 
-  <!-- Hero Banner -->
-  <section class="py-20 text-center bg-gradient-to-b from-gray-800 to-gray-900 text-white">
-    <img src="./assets/profile.jpg" alt="Profile" class="w-32 h-32 mx-auto rounded-full mb-4 glow-green">
-    <h1 class="text-4xl font-bold">Maxwell Udekwe</h1>
-    <p class="mt-2 text-lg">Cybersecurity Enthusiast | Ethical Hacker | Network Defender</p>
-    <p class="mt-1 text-sm text-green-400">Protecting systems. Empowering security.</p>
+  <!-- Hero Section -->
+  <section class="text-center p-8">
+    <img src="your-photo.jpg" alt="Maxwell Udekwe" class="w-32 h-32 rounded-full mx-auto mb-4 glow-green">
+    <h1 class="text-4xl font-bold mb-2">Maxwell Udekwe</h1>
+    <p class="text-lg text-gray-700 dark:text-gray-300">Cybersecurity Analyst | Penetration Tester | Threat Hunter</p>
   </section>
 
-  <!-- Tools Section -->
-  <section id="tools" class="bg-gray-100 dark:bg-gray-900 py-12 px-6">
-    <div class="max-w-6xl mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-10">Tools I Use</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-
-        <!-- Nmap -->
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition-all duration-300">
-          <img src="./assets/nmap.png" alt="Nmap" class="w-16 h-16 mx-auto mb-4">
-          <h3 class="text-xl font-semibold">Nmap</h3>
-          <p class="text-sm mt-2">Powerful network scanner for host discovery and vulnerability mapping.</p>
-        </div>
-
-        <!-- Burp Suite -->
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition-all duration-300">
-          <img src="./assets/burpsuite.png" alt="Burp Suite" class="w-16 h-16 mx-auto mb-4">
-          <h3 class="text-xl font-semibold">Burp Suite</h3>
-          <p class="text-sm mt-2">Web app penetration testing suite for scanning and intercepting traffic.</p>
-        </div>
-
-        <!-- Wireshark -->
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition-all duration-300">
-          <img src="./assets/wireshark.png" alt="Wireshark" class="w-16 h-16 mx-auto mb-4">
-          <h3 class="text-xl font-semibold">Wireshark</h3>
-          <p class="text-sm mt-2">Packet analysis tool for deep network inspection and traffic troubleshooting.</p>
-        </div>
-
-        <!-- Metasploit -->
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition-all duration-300">
-          <img src="./assets/metasploit.png" alt="Metasploit" class="w-16 h-16 mx-auto mb-4">
-          <h3 class="text-xl font-semibold">Metasploit</h3>
-          <p class="text-sm mt-2">Exploit development and testing framework for ethical hacking.</p>
-        </div>
-
+  <!-- Projects Section -->
+  <section class="p-8">
+    <h2 class="text-2xl font-bold mb-6 text-center">Cybersecurity Tools</h2>
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <!-- Nmap -->
+      <div class="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg shadow glow-blue">
+        <h3 class="text-xl font-semibold mb-2">Nmap</h3>
+        <p>A powerful network scanner used to discover hosts, services, and detect vulnerabilities across networks.</p>
       </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="bg-gray-800 text-white py-12 px-6">
-    <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-6">Get in Touch</h2>
-      <p class="mb-4">Let's connect and secure the web together.</p>
-      <div class="flex flex-col md:flex-row items-center justify-center gap-6 text-lg">
-
-        <a href="mailto:maxwelludekwe@gmail.com" class="hover:underline text-green-400">📧 maxwelludekwe@gmail.com</a>
-        <a href="https://www.linkedin.com/in/maxwell-udekwe-7b6296343" target="_blank" class="hover:underline text-blue-400">💼 LinkedIn</a>
-        <a href="https://github.com/maxwelludekwe" target="_blank" class="hover:underline text-gray-300">💻 GitHub</a>
-
+      <!-- Burp Suite -->
+      <div class="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg shadow glow-blue">
+        <h3 class="text-xl font-semibold mb-2">Burp Suite</h3>
+        <p>Essential for web app testing. I use it for interception, scanning, and exploiting security flaws.</p>
+      </div>
+      <!-- Metasploit -->
+      <div class="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg shadow glow-blue">
+        <h3 class="text-xl font-semibold mb-2">Metasploit</h3>
+        <p>An advanced framework for penetration testing and exploiting known vulnerabilities in systems and applications.</p>
+      </div>
+      <!-- Wireshark -->
+      <div class="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg shadow glow-blue">
+        <h3 class="text-xl font-semibold mb-2">Wireshark</h3>
+        <p>A packet analyzer that helps me understand traffic, detect malicious behavior, and analyze protocols.</p>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-black text-gray-400 text-sm text-center py-4">
-    © 2025 Maxwell Udekwe. All rights reserved.
+  <footer class="text-center p-4 mt-10 text-sm text-gray-500 dark:text-gray-400">
+    © 2025 Maxwell Udekwe. Built with ❤ and Tailwind CSS.
   </footer>
-
 </body>
 </html>
